@@ -1,6 +1,16 @@
 -- Crie uma nova tabela no banco de dados
-create table Salario_Base(
-Id INTEGER PRIMARY KEY AUTOINCREMENT,
-Nivel TEXT,
-Salario INTEGER
+CREATE TABLE Modelo (
+Id integer PRIMARY key AUTOINCREMENT,
+NOME text,
+MODELO text,
+SALARIO int
 );
+
+--Listar tabelas
+.tables 
+
+
+SELECT sqlite_version();
+
+create TABLE SAlario(
+)
