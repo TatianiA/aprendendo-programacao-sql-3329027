@@ -31,3 +31,28 @@ Invoice_items
 WHERE 
 InvoiceId > 20
 AND InvoiceId <= 30;
+
+OR
+SELECT
+TrackID,
+UnitPrice,
+UnitPrice * 3,
+UnitPrice + 8,
+(UnitPrice + 8) - 5
+FROM
+Invoice_items
+WHERE 
+InvoiceId = 3
+OR InvoiceId < 20 ;
+
+NOT
+SELECT
+TrackID,
+UnitPrice,
+UnitPrice * 3,
+UnitPrice + 8,
+(UnitPrice + 8) - 5
+FROM
+Invoice_items
+WHERE NOT
+InvoiceId != 8;
