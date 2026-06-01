@@ -50,6 +50,15 @@ FirstName ||''|| LastName AS Nome_Completo,
 REPLACE(Address, 'Av.','Avenida') AS Endereco
 FROM customers
 WHERE 
-Country LIKE 'Bra%';
+Country LIKE 'Brazoil';
 
 -- Na consulta anterior, utilize o símbolo de coringa para construir padrões textuais
+SELECT DISTINCT
+CustomerID AS ID,
+UPPER(FirstName) AS Nome,
+UPPER(LastName) AS Sobrenome,
+FirstName ||''|| LastName AS Nome_Completo,
+REPLACE(Address, 'Av.','Avenida') AS Endereco
+FROM customers
+WHERE 
+Country LIKE 'Bra%';
